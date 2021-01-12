@@ -28,12 +28,12 @@ axios.get('https://jsonplaceholder.typicode.com/todos?_limit=10')
 
 // check box Marking
 markComplete =(id)=>{
-this .setState({
-  todos : this.state.todos.map((todo) => { 
-    if ( todo.id === id ){
-      todo.completed = !todo.completed
-    }
-    return todo;
+  this.setState({
+    todos : this.state.todos.map((todo) => { 
+      if ( todo.id === id ){
+        todo.completed = !todo.completed
+      }
+      return todo;
   } )
 })
 }
